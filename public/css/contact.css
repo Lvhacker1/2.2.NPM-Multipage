@@ -1,0 +1,131 @@
+.contact_section {
+    color: white;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+}
+
+.contact_title {
+    text-align: center;
+    width: 100%;
+    font-size: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 2.5rem;
+}
+
+.left_container {
+    order: 2;
+}
+.right_container {
+    order: 1;
+    max-width: 60%;
+}
+
+.contact_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contact_details,
+.contact_form {
+    margin-top: 1rem;
+    font-size: clamp(1rem, 4vw, 1.125rem);
+}
+
+.contact_details a {
+    color: white;
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact_details a:hover {
+    color: blue;
+}
+
+.container_title {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+} 
+
+.contact_form textarea {
+    height: 40px;
+}
+
+.contact_form input,
+.contact_form textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 0.5rem 0;
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    color: white;
+    width: 100%;
+    outline: none;
+}
+
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+    color: white;
+    border-bottom: 2px solid blue;
+}
+
+.form_button {
+    margin-top: 1rem;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    min-width: 10rem;
+    width: max-content;
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .contact_section {
+        padding: 4rem 6.25rem 4rem 6.25rem;
+    }
+
+    .contact_title {
+        padding-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact_content {
+        flex-direction: row;
+    }
+
+    .left_container,
+    .right_container {
+        flex: 1;
+    }
+
+    .left_container {
+        order: 1;
+    }
+    .right_container {
+        order: 2;
+    }
+
+    .contact_form input {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact_section {
+        padding: 5rem 6.5rem 11rem 6.25rem;
+    }
+
+    .contact_title {
+        text-align: left;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact_section {
+        padding: 5rem 7.5rem 11rem 7.5rem;
+    }
+}

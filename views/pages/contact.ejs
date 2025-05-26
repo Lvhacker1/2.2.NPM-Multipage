@@ -1,0 +1,46 @@
+<%-include ("../partials/head", {pageTitle: "Contact"})%>
+<%-include ("../partials/header", {page: "Contact"})%>
+
+<section class="contact_section contact-bg_image" >
+    <h1 class="contact_title"><%= contact.title %></h1>
+    <div class="contact_content">
+    <div class="left_container">
+        <div class="contact_details">
+            <h3 class="container_title"><%= contact.detailsTitle %></h2>
+        </div>
+        <div class="contact_details">
+            <strong><%= contact.phone.label %></strong><br>
+            <a href="tel:+46723500460"><%= contact.phone.number %></a>
+        </div>
+        <div class="contact_details">
+            <strong><%= contact.email.label %></strong><br>
+            <a href="mailto:lavasha2@hotmail.com"><%= contact.email.emailAdress %></a>
+        </div>
+        <div class="contact_details">
+            <strong><%= contact.adress.label%></strong><br>
+            <% contact.adress.lines.forEach(line => { %>
+                <p><%= line %></p>
+            <% }) %>
+        </div>
+    </div>
+    <div class="right_container">
+        <form>
+            <div class="contact_form">
+                <h3 class="container_title"><%= contact.form.title %></h2>
+            </div>
+            <div class="contact_form">
+                <input placeholder="<%= contact.form.placeholders.name %>" type="text" id="name" required>
+            </div>
+            <div class="contact_form">
+                <input placeholder="<%= contact.form.placeholders.email %>" type="text" id="email" required>
+            </div>
+            <div class="contact_form">
+                <textarea placeholder="<%= contact.form.placeholders.message %>" id="message" name="message" required></textarea>
+            </div>
+            <button class="form_button"><%= contact.form.buttonText %></button>
+        </form>
+    </div>
+</div>
+</section>
+
+<%-include ("../partials/footer")%>

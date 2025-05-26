@@ -1,0 +1,16 @@
+[
+    {
+        "slug": "digital-marketing",
+        "name": "Digital Marketing",
+        "description": "Craft a compelling brand identity that resonates with your audience. We develop clear, strategic brand positioning and messaging that differentiate you in the market and build lasting emotional connections with your customers.",
+        "return": "Back to Services",
+        "returnSymbol": "&#60;"
+    },
+    {
+        "slug": "brand-strategy",
+        "name": "Brand Strategy",
+        "description": "Drive growth with targeted, data driven digital campaigns. From social media and paid ads to SEO and content marketing, we create integrated digital strategies that increase visibility, engagement, and conversions",
+        "return": "Back to Overview",
+        "returnSymbol": "&#60;"
+    }
+]

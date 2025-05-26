@@ -1,0 +1,35 @@
+{
+    "intro": {
+        "title": "Driven by Purpose<br>Powered by Strategy",
+        "text": "Discover what fuels our work and how LuneX empowers brands to grow through meaningful insight, creative thinking, and a clear sense of purpose that turns ideas into measurable impact."
+    },
+    "sections": [
+    {
+        "slug": "our-purpose",
+        "title": "Our Purpose",
+        "paragraph": "Every brand has a story worth telling. LuneX was founded on the belief that thoughtful strategy and genuine creativity can spark real connections and lasting impressions.",
+        "link": "Explore Our Vision ➔",
+        "details": "We develop clear, strategic brand positioning and messaging that differentiate you in the market and build lasting emotional connections with your customers.",
+        "return": "Back to Overview",
+        "returnSymbol": "&#60;"
+    },
+    {
+        "slug": "our-approach",
+        "title": "Our Approach",
+        "paragraph": "Growth is built on insight and action. At LuneX, a data informed mindset meets creative problem solving, ensuring every step is purposeful and every result measurable.",
+        "link": "See How We Work ➔",
+        "details": "From social media and paid ads to SEO and content marketing, we create integrated digital strategies that increase visibility, engagement, and conversions",
+        "return": "Back to Overview",
+        "returnSymbol": "&#60;"
+    },
+    {
+        "slug": "our-team",
+        "title": "Our Team",
+        "paragraph": "People make the difference. LuneX brings together specialists who value collaboration, curiosity, and results creating an environment where brands and ideas thrive.",
+        "link": "Meet the Experts ➔",
+        "details": "We develop clear, strategic brand positioning and messaging that differentiate you in the market and build lasting emotional connections with your customers.",
+        "return": "Back to Overview",
+        "returnSymbol": "&#60;"
+    }
+]
+}
