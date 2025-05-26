@@ -1,0 +1,27 @@
+<%-include ("../partials/head", {pageTitle: "Services"})%>
+<%-include ("../partials/header", {page: "Services"})%>
+
+<section class="main_section_services bg_image">
+    <div class="services_container">
+        <h1 class="page_title"> <%= content.pageTitle %> </h1>
+        <p class="intro_text"> <%= content.introText %> </p>
+        <button class="button"> <%= content.buttonText %> </button>
+    </div>
+</section>
+<section class="services_section ">
+    <div class="list_container">
+        <h2 class="list_title"> <%= content.listTitle %> </h2>
+        <ul class="feature">
+            <% content.listText.forEach(item => { %>
+                <li><span class="checkmark">✓</span> <%= item %> </li>
+            <% }) %>
+        </ul>
+    </div>
+    <div class="link_container">
+            <% services.forEach(service => { %>
+                <a class="sub_link" href="/services/<%= service.slug %>"><%= service.name %> →</a>
+        <% }) %>
+    </div>
+</section>
+
+<%-include ("../partials/footer")%>
