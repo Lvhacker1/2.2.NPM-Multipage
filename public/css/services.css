@@ -1,0 +1,146 @@
+.main_section_services {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    gap: 2.5rem;
+}
+
+.bg_image {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg_image::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,1) 100%), 
+    url("/images/serviceBgImage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1;
+    inset: 0;
+    pointer-events: none;
+}
+
+.services_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.intro_text {
+    color: #ffffff9a;
+}
+
+.services_section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    gap: 2.5rem;
+}
+
+.list_container {
+    text-align: center;
+}
+
+.list_title {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+}
+
+.feature {
+    display: inline-block;
+    text-align: left;
+}
+
+.feature li {
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.link_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sub_link {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    cursor: pointer;
+    display: inline-block;
+    width: max-content;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sub_services {
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    .main_section_services {
+        padding: 4rem 6.25rem 4rem 6.25rem;
+    } 
+
+    .services_section {
+        padding: 4rem 6.25rem 4rem 6.25rem;
+    }
+
+    .link_container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main_section_services {
+        padding: 5rem 6.5rem 11rem 6.25rem;
+    }
+
+    .services_container {
+        text-align: left;  
+        max-width: 58%;
+        align-items: baseline;
+    }
+
+    .services_section {
+        padding: 5rem 6.25rem 5rem 6.25rem;
+    }
+
+    .link_container {
+        justify-content: flex-start;
+    }
+
+    .list_container {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .main_section_services {
+        padding: 5rem 7.5rem 11rem 7.5rem;
+    }
+
+    .services_section {
+        padding: 5rem 7.5rem 5rem 7.5rem;
+    }
+}

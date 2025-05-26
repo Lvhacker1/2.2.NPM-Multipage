@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5; 
+}
+
+h1, h2, h3, .nav-menu a {
+    font-family: "Orbitron", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 20;
+    position: relative;
+}
+
+.line-1, .line-2, .line-3 {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    position: relative;
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+
+.hamburger-menu.active .line-1 {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+}
+
+.hamburger-menu.active .line-2 {
+    opacity: 0;
+}
+
+.hamburger-menu.active .line-3 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+}
+
+.nav-menu {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    margin: 0 -2rem;
+    padding: 0.7rem 2rem 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-menu.show {
+    transform: translate(0);
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: clamp(0.5rem, 4vw, 0.9rem);
+    color: #ffffff9a;
+    margin-top: auto;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .header,
+    .footer  {
+        padding: 1rem 6.25rem;
+        align-items: baseline;
+        background-color: #00000028;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+    
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        transform: none;
+        transition: none;
+        margin: 0;
+        padding: 0;
+        justify-content: end;
+        gap: clamp(1.5rem, 5vw, 2.5rem);
+        background-color: transparent;
+        height: auto;
+    }
+
+    .nav-menu a {
+        padding: 0;
+    }
+
+    .nav-menu a.active {
+        border-bottom: 2px solid rgb(57, 90, 255);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header,
+    .footer  {
+        padding: 1rem 7.5rem;
+    }
+    
+}

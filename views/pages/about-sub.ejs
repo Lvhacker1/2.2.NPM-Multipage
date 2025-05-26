@@ -1,0 +1,14 @@
+<%-include ("../partials/head", {pageTitle: "About"})%>
+<%-include ("../partials/header", {page: "About"})%>
+
+<section class="main_section_about">
+    <div class="about_container">
+        <h1 class="page_title_about"><%= section.title %> </h1>
+        <p class="intro_text_about"><%- section.details%></p>
+        <p class="intro_text_about"><%= section.paragraph %> </p>
+        <p class="intro_text_about"><%= section.paragraphSecond %> </p>
+        <a class="return_link" href="/About"><span class="return_symbol"><%- section.returnSymbol %></span><%- section.return%></a>
+    </div>
+</section>
+
+<%-include ("../partials/footer")%>

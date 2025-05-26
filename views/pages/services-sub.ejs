@@ -1,0 +1,12 @@
+<%-include ("../partials/head", {pageTitle: "Services"})%>
+<%-include ("../partials/header", {page: "Services"})%>
+
+<section class="main_section_services sub_services">
+    <div class="services_container">
+        <h1 class="page_title"><%= service.name %> </h1>
+        <p class="intro_text"><%= service.description %> </p>
+        <a class="return_link" href="/Services"><span class="return_symbol"><%- service.returnSymbol %></span><%- service.return%></a>
+    </div>
+</section>
+
+<%-include ("../partials/footer")%>
